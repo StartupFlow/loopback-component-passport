@@ -1,4 +1,4 @@
-// Copyright IBM Corp. 2016. All Rights Reserved.
+// Copyright IBM Corp. 2016,2018. All Rights Reserved.
 // Node module: loopback-component-passport
 // This file is licensed under the Artistic License 2.0.
 // License text available at https://opensource.org/licenses/Artistic-2.0
@@ -20,6 +20,7 @@ describe('configureProvider', function() {
   function OAuth2Strategy(options, verify) {};
   function OpenIDStrategy(options, verify) {};
   function OpenIDConnectStrategy(options, verify) {};
+  function SamlStrategy(options, verify) {};
 
   function testReturnType(Strategy, module, authScheme) {
     var options = {
@@ -41,13 +42,14 @@ describe('configureProvider', function() {
     mock('passport-oauth2', OAuth2Strategy);
     mock('passport-openid', OpenIDStrategy);
     mock('passport-openidconnect', OpenIDConnectStrategy);
+    mock('passport-saml', SamlStrategy);
   });
 
-  it('returns an LDAPStrategy', function() {
+  it('returns a LDAPStrategy', function() {
     testReturnType(LDAPStrategy, 'passport-ldapauth', 'ldap');
   });
 
-  it('returns an LocalStrategy', function() {
+  it('returns a LocalStrategy', function() {
     testReturnType(LocalStrategy, 'passport-local', 'local');
   });
 
@@ -65,5 +67,9 @@ describe('configureProvider', function() {
 
   it('returns an OpenIdConnectStrategy', function() {
     testReturnType(OpenIDConnectStrategy, 'passport-openidconnect', 'openid connect');
+  });
+
+  it('returns a SamlStrategy', function() {
+    testReturnType(SamlStrategy, 'passport-saml', 'saml');
   });
 });
