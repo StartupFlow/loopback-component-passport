@@ -2,6 +2,11 @@
   "name": "UserIdentity",
   "plural": "UserIdentities",
   "base": "PersistedModel",
+  "indexes": {
+    "modified": {
+      "modified": 1
+    }
+  },
   "properties": {
     "provider": {
       "type": "String",
@@ -22,17 +27,22 @@
       "type": "Object"
     },
     "created": "Date",
-    "modified": "Date"
+    "modified": {
+      "type": "Date"
+    }
   },
-  "acls": [{
-    "principalType": "ROLE",
-    "principalId": "$everyone",
-    "permission": "DENY"
-  }, {
-    "principalType": "ROLE",
-    "principalId": "$owner",
-    "permission": "ALLOW"
-  }],
+  "acls": [
+    {
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "DENY"
+    },
+    {
+      "principalType": "ROLE",
+      "principalId": "$owner",
+      "permission": "ALLOW"
+    }
+  ],
   "relations": {
     "user": {
       "type": "belongsTo",
