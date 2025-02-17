@@ -6,8 +6,8 @@
     "modified": {
       "modified": 1
     },
-    "userid": {
-      "userid": 1
+    "userId": {
+      "userId": 1
     }
   },
   "properties": {
@@ -33,7 +33,7 @@
     "modified": {
       "type": "Date"
     },
-    "userid": {
+    "userId": {
       "type": "String",
       "required": true
     }
