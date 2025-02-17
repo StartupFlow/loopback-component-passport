@@ -2,14 +2,6 @@
   "name": "UserIdentity",
   "plural": "UserIdentities",
   "base": "PersistedModel",
-  "indexes": {
-    "modified": {
-      "modified": 1
-    },
-    "userId": {
-      "userId": 1
-    }
-  },
   "properties": {
     "provider": {
       "type": "String",
@@ -31,11 +23,13 @@
     },
     "created": "Date",
     "modified": {
-      "type": "Date"
+      "type": "Date",
+      "index": true
     },
     "userId": {
       "type": "String",
-      "required": true
+      "required": true,
+      "index": true
     }
   },
   "acls": [
