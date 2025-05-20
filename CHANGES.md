@@ -1,3 +1,133 @@
+2020-03-06, Version 3.12.0
+==========================
+
+ * Update LTS status in README (Miroslav Bajtoš)
+
+ * chore: improve issue and PR templates (Nora)
+
+ * drop Node.js 6 support (Nora)
+
+
+2019-05-30, Version 3.11.0
+==========================
+
+ * #267 get all groups for ms-ad (Bogdan, Tyler)
+
+ * chore: update copyrights years (Agnes Lin)
+
+
+2018-07-09, Version 3.10.0
+==========================
+
+ * [WebFM] cs/pl/ru translation (candytangnb)
+
+ * support nameID as saml profile id field (Peter Willis)
+
+
+2018-06-20, Version 3.9.0
+=========================
+
+ * chore: update deps and drop node 4 (Taranveer Virk)
+
+
+2018-05-08, Version 3.8.1
+=========================
+
+ * chore: update CODEOWNERS (Diana Lau)
+
+ * use simple quotes instead of the double quotes (Ghizlane AROUSSI)
+
+ * handle azure-saml profile id (Ghizlane AROUSSI)
+
+
+2018-03-31, Version 3.8.0
+=========================
+
+ * Update passport-configurator.js (Derek Brown)
+
+ * fix grammar of mocha (Derek Brown)
+
+ * Added SAML test (Derek Brown)
+
+ * modified saml cert behavior (Derek Brown)
+
+
+2018-03-22, Version 3.7.0
+=========================
+
+ * merge from master (jackrvaughan)
+
+ * profile to account (jackrvaughan)
+
+ * added test for custom field mapping (jackrvaughan)
+
+ * removed package-lock (jackrvaughan)
+
+ * added profileMapping option (jackrvaughan)
+
+ * Remove unnecessary userObj.id and update test. (Axel Gendillard)
+
+ * Implement specific test, fix assert when the error is in different language (email missing) and fix indent in user-identity. (Axel Gendillard)
+
+ * Fix externalId null when SP return profile with undefined id. (Axel Gendillard)
+
+
+2018-03-13, Version 3.6.0
+=========================
+
+ * Active Directory compatibility (Sandrine Caruso)
+
+ * chore(package): Upgrade passport (Berkeley Martinez)
+
+
+2018-03-09, Version 3.5.0
+=========================
+
+ * added new test (Felix Mueller)
+
+ * Added groupsearch support for LDAP authentication (Felix Mueller)
+
+ * Upd: saml: pass callbackURL as callbackUrl. (C-A de Salaberry)
+
+ * chore: update license (Diana Lau)
+
+ * update globalize string (Diana Lau)
+
+ * Update README.md (Nishil)
+
+ * Add stalebot configuration (Kevin Delisle)
+
+
+2017-08-21, Version 3.4.1
+=========================
+
+ * Create Issue and PR Templates (#227) (Sakib Hasan)
+
+ * Add CODEOWNER file (Diana Lau)
+
+ * Fix api docs (ssh24)
+
+
+2017-07-04, Version 3.4.0
+=========================
+
+ * Add LDAP properties configuration (nicolas-moteau)
+
+
+2017-04-25, Version 3.3.0
+=========================
+
+ * Fix style issue (Raymond Feng)
+
+ * Fix the callback signature for openid connect (Raymond Feng)
+
+ * Fix Azure profile id extraction (ashanfernando)
+
+ * Replicate new issue_template from loopback (Siddhi Pai)
+
+ * Replicate issue_template from loopback repo (Siddhi Pai)
+
+
 2017-02-02, Version 3.2.0
 =========================
 
